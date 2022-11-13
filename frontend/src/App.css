@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: "proxima-nova"; */
+}
+/* @font-face {
+	font-family: "";
+	src: url("https://assets.converse.com/fonts/proximanova_light_macroman/proximanova-light-webfont.woff2")
+			format("woff2"),
+		url("https://assets.converse.com/fonts/proximanova_light_macroman/proximanova-light-webfont.woff")
+			format("woff");
+	font-weight: 300;
+} */
+
+.App {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.navBar {
+	/* position: absolute; */
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: row;
+	width: 100%;
+	height: 3.5rem;
+	/* align-items: flex-start; */
+	align-content: flex-start;
+	/* border: solid black; */
+	justify-content: space-between;
+	padding: 8px 25px;
+	/* justify-items: center; */
+	align-items: center;
+}
+
+span {
+	/* height: 20px;
+  margin-top: 32px; */
+	cursor: pointer;
+	margin: 5px;
+}
+
+.productButtons {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 60px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.cart {
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.cosy-shoe {
+	max-height: 40rem;
+	width: 100%;
+	/* position: absolute; */
+}
+
+.cosy-shoe:hover {
+	opacity: 70%;
+}
+
+span:hover {
+	box-shadow: inset 0 0 100px 100px rgb(186, 183, 183);
+}
+
+.homepage-spotlight {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	max-height: 40rem;
+	background-size: contain;
+	/* background-image: url("https://www.converse.com/on/demandware.static/-/Library-Sites-ConverseEU01SharedLibrary/default/dwabd0550d/firstspirit/converse-uk/media/homepage_1/2022_holiday_1/mobile_20/M-WE-HP-P1-Cozy-Utility.jpg");
+	background-repeat: no-repeat; */
+}
+
+.promo-spotlight {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+
+	flex-wrap: wrap;
+	overflow-wrap: break-word;
+	margin-left: -97%;
+	text-align: left;
+}
+
+.shoe-headline-top {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -3px;
+	font-weight: 10000;
+	font-size: 2.4rem;
+	line-height: 1.14;
+}
+
+.shoe-headline-bottom {
+	/* margin-top: px; */
+	font-size: 2.4rem;
+	line-height: 1.14;
+	margin-bottom: 2px;
+}
+
+.shop-now-button {
+	/* position: absolute; */
+	width: 15%;
+	display: flex;
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 8px;
+	left: 30px;
+	justify-content: center;
+	margin: 8px;
+	cursor: pointer;
+}
+
+.shop-now-button:hover {
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.4);
+}
+.shoe-headline-subtext1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 8px;
+	width: 100%;
+	font-size: 0.7rem;
+	line-height: 1.42;
+}
+
+/****** Rest of page ******/
+.product-carousel {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	/* align-content: center; */
+	/* position: absolute; */
+	/* top: 740px; */
+	width: 100%;
+	/* margin: 385px; */
+	justify-content: flex-start;
+}
+
+.shop-by-style {
+	display: flex;
+	width: 22rem;
+	height: 7rem;
+	/* margin-top: 10px; */
+	/* padding-top: 30px; */
+	font-weight: 600;
+	font-size: 2rem;
+	align-items: center;
+	padding-left: 1.5rem;
+}
+
+.shoe-mapping {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.shoe-item-mapped {
+	height: 100%;
+	/* flex-direction: row; */
+}
+.shoe-item-container {
+	width: 100%;
+	height: 370px;
+	display: flex;
+	cursor: pointer;
+	flex-direction: column;
+	width: 25%;
+}
+
+.shoe-item-container p{
+	margin-bottom: -25px;
+	z-index: 9;
+}
+.shoe-item-mapped:hover {
+	filter: brightness(80%);	transition: 0.4s;
+}
